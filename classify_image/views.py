@@ -31,7 +31,7 @@ def load_graph():
 SESS, GRAPH_TENSOR, LABELS = load_graph()
 
 
-@csrf_exempt
+@csrf_exempt #解决跨域请求问题
 def classify_api(request):
     data = {"success": False}
 
